@@ -21,15 +21,16 @@ function App() {
           <h1>People Fetcher</h1>
           <input
             style = {{
-              fontSize: '2rem'
+              fontSize: '2rem',
+              width: '35%'
             }}
-            placeholder = "Number of people"
+            placeholder = "Enter No"
             type = "number"
             onChange={event => setCount(event.target.value)}
            />
            <button 
            style={{
-              fontSize: '2rem'
+              fontSize: '2rem',
            }}
            onClick={getPeople}
            >
@@ -39,11 +40,7 @@ function App() {
            {people.map(person => (
               <div key={person.email}
                   style = {{
-                    width: '100%',
-                    display: 'flex',
                     marginTop: '0.5em',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
                   }}
               >
                 <img
