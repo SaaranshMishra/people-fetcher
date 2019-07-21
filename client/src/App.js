@@ -18,7 +18,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          <h1>People Fetcher using React and NodeJS</h1>
+          <h1>People Fetcher</h1>
           <input
             style = {{
               fontSize: '2rem'
